@@ -21,3 +21,5 @@ void reset() ;
 uint32_t readADC() ;
 };
 #endif
+
+https://makerselectronics.com/wp-content/uploads/2025/09/ENG_DS_MS5611-01BA03_B3.pdf
