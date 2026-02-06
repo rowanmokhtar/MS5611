@@ -1,0 +1,23 @@
+#ifndef MS5611_H
+#define MS5611_H
+#include <stdint.h>
+
+class MS5611
+{  
+public:
+
+   bool begin() ;
+   void calibrateSurface () ;
+    float getTemperature() ;
+    float getPressure() ;
+    float getDepth() ;
+private:
+ 
+uint16_t C1 ,C2 , C3 , C4 , C5 , C6 ;
+float surfacePressure ;
+float density = 1024.0 ; 
+void readCalibrationData() ;
+void reset() ;
+uint32_t readADC() ;
+};
+#endif
